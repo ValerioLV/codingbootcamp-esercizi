@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+  
+.hero {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+}
+  
+.hero img {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 120px;
+    left: calc(50% - 150px);
+    color: white;
+    font-size: 3rem;
+}
+
+.hero h3 {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 90px);
+    color: white;
+}
+
+.card {
+    width: 200px;
+    height: 380px;
+    border-radius: 6px;
+}
+  
+.card__title {
+    text-align: center;
+    color: rebeccapurple;
+}
+  
+.card__description {
+    text-align: center;
+}
