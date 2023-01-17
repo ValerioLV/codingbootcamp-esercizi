@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    background-color: aqua;
+  }
+
+  .logo {
+    height: 80px;
+    width: 250px;
+  }
+
+  .side-bar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+
+  .show{
+    z-index: 2 !important;
+    opacity: 1 !important;
+  }
+
+  .line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  .tendina {
+    background-color: white;
+    box-shadow: 0px 10px 10px #000;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    right: 10px;
+    top: 65px;
+    z-index: -2;
+    opacity: 0; 
+    transition: all 0.35s;
+    padding: 20px;
+  }
+  
+  .list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: aquamarine;
+  }
+
+  .productsCard{
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title{
+    border: 10px, 0px;
+    align-self: center;
+  }
+
+  .prod-img{
+    height: 200px;
+    width: 250px;
+  }
+
+  .buy-btn{
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 0.35s;
+    }
+
+  .buy-btn:hover{
+    background-color: gray;
+  }
+
+  .remove-btn{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 25px;
+  }
