@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    position: relative;
+    background-color: #99B5D2;
+  }
+
+  .logo {
+    height: 80px;
+    width: 150px;
+  }
+
+  .headContainer{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .postLink{
+    margin-top: 10px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+  }
+
+  .side-bar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+  }
+
+  .show{
+    z-index: 3 !important;
+    opacity: 1 !important;
+  }
+
+  .line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  .tendina {
+    background-color: white;
+    box-shadow: 0px 10px 10px #000;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    right: 10px;
+    top: 65px;
+    z-index: -1;
+    opacity: 0; 
+    transition: all 0.35s;
+    padding: 20px;
+  }
+  
+  .list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: sienna;
+  }
+
+  .productsCard{
+    margin-top: 15px;
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title{
+    padding-top: 5px;
+    align-self: center;
+    font-family: Montserrat;
+  }
+
+  .description{
+    font-family: Montserrat;
+  }
+
+  .prod-img{
+    height: 200px;
+    width: 250px;
+    border: 4px solid black;
+  }
+
+  .buy-btn{
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 0.35s;
+    padding: 2px;
+    font-family: Montserrat;
+    }
+
+  .buy-btn:hover{
+    background-color: gray;
+  }
+
+  .remove-btn{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 25px;
+  }
+
+  .notif{
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .products{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .forms{
+    font-family: Montserrat;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #postForm{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    align-items: center;
+  }
+
+  #categoryForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 90px;
+    width: 300px;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .input{
+    width: 100%;
+  }
+
+  .btnSub{
+    width: fit-content;
+    padding: 2px 5px;
+
+  }

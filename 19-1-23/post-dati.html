@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./post.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="https://www.niascaportofino.it/wp-content/uploads/2016/10/amazon-logo.jpg" 
+        alt="LOGO" 
+        class="logo">
+        <a href="./index.html" target="_blank" rel="noopener noreferrer" class="postLink">Home</a>
+        <div class="side-bar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="tendina"></div>
+    </header>
+    <section class="forms">
+        <div class="products">
+        Form per inserire i prodotti
+            <form id="postForm">
+                <label for="title">Titolo: </label>
+                <input type="text" id="title" class="input" required />
+
+                <label for="price">Prezzo: </label>
+                <input type="number" id="price" class="input" required/>
+
+                <label for="category">Categoria: </label>
+                <input type="number" id="category" class="input" required/>
+
+                <label for="image">Immagine URL: </label>
+                <input type="text" id="image" class="input" required/>
+
+                <label for="description">Descrizione: </label>
+                <textarea id="description" class="input" required></textarea>
+                <input type="submit" value="INVIA" class="btnSub">
+            </form>
+        </div>
+        <div class="products">
+        Form per le categorie
+            <form id="categoryForm">
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="categoryName" class="input" required>
+
+                <label for="image">Immagine URL: </label>
+                <input type="url" name="image" id="categoryImage" class="input" required>
+                <input type="submit" value="INVIA" class="btnSub">
+            </form>
+        </div>
+    </section>   
+</body>
+</html>
