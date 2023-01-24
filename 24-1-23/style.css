@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardCont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 3px;
+}
