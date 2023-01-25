@@ -1,5 +1,5 @@
-import { dataDisplay } from "./script";
-import { listaProdotti } from "./serverMethods";
+import { dataDisplay } from "./script.js";
+import { listaProdotti } from "./serverMethods.js";
 
 const filtro1 = document.querySelector(".cat-1");
 const filtro2 = document.querySelector(".cat-2");

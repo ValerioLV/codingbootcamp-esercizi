@@ -1,0 +1,58 @@
+   body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+   }
+   
+   .btn_random{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: 25px;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+  }
+
+.unit-card-dark {
+    width: 550px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(86,2,117,1) 100%);    
+    border-radius: 20px;
+}  
+
+.unit-card-fire {
+  width: 550px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(233,5,5,1) 100%);
+  border-radius: 20px;
+} 
+ 
+.unit-img{
+  width: 300px;
+  height: 300px;
+  align-self: center;
+}
+
+.unit-name, .unit-id, .unit-element{
+  height: 30px;
+  margin: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}

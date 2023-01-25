@@ -9,7 +9,6 @@ import { cE, qS, qSA} from "./utils.js";
 
 const userGen = (data) => {
     const {id, firstName, lastName, age, email} = data;
-    const container = qS(".cardCont");
     const cardEl = cE("div");
     const idEl = cE("p");
     const fNEl = cE("span");
