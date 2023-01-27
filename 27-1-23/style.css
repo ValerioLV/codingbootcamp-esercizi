@@ -1,0 +1,31 @@
+body{
+    background-color: #05014a;
+}
+
+.tvs{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 4%;
+}
+
+h1{
+    text-align: center;
+    color: goldenrod;
+}
+
+.tv-series img{
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
+}
+
+.top-rated, .most-popular{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}

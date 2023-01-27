@@ -22,8 +22,6 @@ btnRandom.addEventListener("click", () => {
 const elementBarGen = (type, valueLenght) => {
     const wrapper = cE("div");
     const textEl = cE("h4");
-    // const fElementEl = cE("div");
-    // const dElementEl = cE("div");
     const elementEl = cE("div");
 
     wrapper.className = "element-bar";

@@ -1,0 +1,16 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.research{
+    display: flex;
+    gap: 10px;
+}
+
+#search-btn{
+    background-color: aquamarine;
+    color: green;
+}
