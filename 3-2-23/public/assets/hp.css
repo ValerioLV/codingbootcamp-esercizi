@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    height: 90vh;
+}
+
+.menu{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0px 5px;
+}
+
+.link ul{
+    list-style: none;
+}
+
+.link a{
+    text-decoration: none;
+}
+
+.root{
+    text-align: center;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
