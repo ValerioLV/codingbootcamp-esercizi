@@ -2,10 +2,10 @@ const http = require('http')
 const os = require('os')
 var fs = require('fs');
 var url = require('url')
-// const { url } = require('inspector');
 let utente = os.userInfo();
 let piattaforma  = os.platform();
 let data = new Date();
+
 let messaggio = `<!doctype html>
 <html>
 <head>

@@ -1,0 +1,33 @@
+[
+    {
+        "titolo": "Thrawn",
+        "autore": "Timothy Zahn",
+        "genere": "Fantascienza",
+        "prezzo": 13.99,
+        "id": 1
+    },
+
+    {
+        "titolo": "Darth Bane",
+        "autore": "Drew Karpyshyn",
+        "genere": "Fantascienza",
+        "prezzo": 22.80,
+        "id": 2
+    },
+
+    {
+        "titolo": "Darth Plagueis",
+        "autore": "James Luceno",
+        "genere": "Fantascienza",
+        "prezzo": 13.00,
+        "id": 3
+    },
+
+    {
+        "titolo": "Bloodline",
+        "autore": "Claudia Gray",
+        "genere": "Fantascienza",
+        "prezzo": 11.80,
+        "id": 4
+    }
+]
