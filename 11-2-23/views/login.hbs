@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Inserisci i dati per il login</h1>
+        {{#if warning}}
+        <h3 style="color: red;">
+            {{warning}}
+        </h3>
+        {{/if}}
+        <form action="/login" method="POST">
+            <label for="name">Nome</label>
+            <input type="text" name="name">
+            <label for="lastName">Password</label>
+            <input type="password" name="password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
