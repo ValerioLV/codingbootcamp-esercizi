@@ -1,0 +1,67 @@
+use 14-02-23
+'switched to db 14-02-23'
+db.createCollection('photos')
+{ ok: 1 }
+db.photos.insertMany([
+    {
+      userId: 1,
+      data: Date(),
+      url: "url foto",
+      id: 1
+    },
+    {
+      userId: 1,
+      data: Date(),
+      url: "url foto",
+      id: 2
+    },
+    {
+      userId: 2,
+      data: Date(),
+      url: "url foto 3",
+      id: 3
+    }
+  ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("63ebb8fa08ccc277b6c2d67b"),
+    '1': ObjectId("63ebb8fa08ccc277b6c2d67c"),
+    '2': ObjectId("63ebb8fa08ccc277b6c2d67d")
+  }
+}
+
+db.users.find().sort({userId: -1})
+{
+  _id: ObjectId("63ebb714aaec78ebccb59bb4"),
+  userId: 2,
+  age: 21,
+  sex: 'F'
+}
+{
+  _id: ObjectId("63ebb714aaec78ebccb59bb3"),
+  userId: 1,
+  age: 20,
+  sex: 'M'
+}
+db.photos.countDocuments()
+3
+
+db.users.updateOne({userId: 2},
+{
+  $set: {
+    age: 20
+  }
+})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.photos.deleteOne({id: 1})
+{
+  acknowledged: true,
+  deletedCount: 1
+}
