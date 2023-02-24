@@ -1,4 +1,5 @@
 require('./models/DBconfig');
+
 const express = require('express');
 const hbs = require('hbs');
 const bodyparser = require('body-parser');
@@ -15,7 +16,7 @@ app.use(express.static('./public'))
 app.use(bodyparser.urlencoded({
     extended: true
 }));
-app.use('/', routes);
+app.use('/note', routes);
 app.use('/giochi', gameR);
 
 
