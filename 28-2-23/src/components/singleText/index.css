@@ -1,0 +1,13 @@
+.OneText{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px black;
+    width: 300px;
+}
+
+.OneText p{
+    margin: 0;
+}

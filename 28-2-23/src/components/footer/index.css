@@ -1,0 +1,16 @@
+.Footer{
+    background-color: aqua;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.FooterText{
+    font-size: 1.5rem;
+    color: red;
+    margin: 0;
+}

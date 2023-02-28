@@ -1,0 +1,21 @@
+.Text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ResponsiveText{
+    align-self: center;
+    color: purple;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.textContain{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}

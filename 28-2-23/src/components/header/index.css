@@ -1,0 +1,13 @@
+.Header{
+    height: 80px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Header a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
