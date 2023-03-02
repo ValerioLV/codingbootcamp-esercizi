@@ -5,3 +5,25 @@
     background-color: deepskyblue;
 
 }
+
+.toggleBtn{
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    height: 30px;
+    background-color: transparent;
+    border: 0.1px dotted white;
+    font-size: 0.9rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.dark{
+    background-color: #333;
+    color: #fff;
+}
+
+.dark button{
+    background-color: transparent;
+}

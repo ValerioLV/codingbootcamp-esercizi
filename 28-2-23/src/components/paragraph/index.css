@@ -19,3 +19,7 @@
     flex-wrap: wrap;
     gap: 15px;
 }
+
+.dark{
+    background-color: #333;
+}

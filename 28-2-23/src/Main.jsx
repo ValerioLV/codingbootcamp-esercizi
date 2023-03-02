@@ -1,14 +1,27 @@
 import { productsList } from './data/ProductsList';
+import { useState } from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
+import Carousel from './components/carousel';
 import ProdList from './components/prodList';
 import Paragraph from './components/paragraph';
 import "./main.css";
 
 const Main = () => {
+  const [theme, setTheme] = useState('light')
+
+  const toggleTheme = () => {
+    if(theme === 'light'){
+      setTheme('dark');
+    }else{
+      setTheme('light');
+    }};
+
   return (
-    <div className="Main">
+    <div className={`Main ${theme}`}>
       <Header />
+      <button className={`toggleBtn ${theme}`} onClick={toggleTheme}>Dark Mode</button>
+      <Carousel />
       <ProdList listData={productsList} />
       <Paragraph something="bottom text"/>
       <Footer />
