@@ -1,4 +1,3 @@
-import { productsList } from './data/ProductsList';
 import { useState } from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -22,7 +21,7 @@ const Main = () => {
       <Header />
       <button className={`toggleBtn ${theme}`} onClick={toggleTheme}>Dark Mode</button>
       <Carousel />
-      <ProdList listData={productsList} />
+      <ProdList />
       <Paragraph something="bottom text"/>
       <Footer />
     </div>

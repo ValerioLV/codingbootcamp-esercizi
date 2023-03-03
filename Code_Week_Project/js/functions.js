@@ -89,4 +89,4 @@ const mediaPage = (data) => {
   
 // })}
 
-export {sectionGenMovie, sectionGenTv, movieSearch}
+export {sectionGenMovie, sectionGenTv}

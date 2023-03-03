@@ -1,7 +1,7 @@
 import { GET, GET_Genre } from "./api.js";
 import { sectionGenMovie, sectionGenTv } from "./functions.js"; 
-import { qS } from "./utils.js";
-import { movieSearch } from "./functions.js";
+// import { qS } from "./utils.js";
+// import { movieSearch } from "./functions.js";
 
 let movieList = []
 let tvList = []
