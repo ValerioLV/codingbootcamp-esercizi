@@ -1,0 +1,9 @@
+.AddTodoModal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.AddTodoModal input{
+    height: fit-content;
+}
