@@ -1,7 +1,8 @@
 import "./index.css";
 
-const SingleProd = ({ prodData }) => {
-    const onImageClick = () => window.open(prodData.images[0]);
+const SingleProd = ({ prodData, setSingleProductModal }) => {
+    const onImageClick = () => setSingleProductModal(() => prodData);
+
 
     return (
       <div

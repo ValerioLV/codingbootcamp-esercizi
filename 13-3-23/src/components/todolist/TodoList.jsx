@@ -15,8 +15,13 @@ const TodoList = () => {
 
     return(
         <div className="TodoList">
-            {taskList.map((task, index) => (
-                <TodoItem taskData={task} key={index} />
+            {
+                taskList.sort((a,b) => {if(a.todo < b.todo) {return -1} 
+                                        if(a.todo > b.todo) {return 1}
+                                        return 0})
+                                        
+                    .map((task, index) => (
+                    <TodoItem setTaskList={setTaskList} taskData={task} key={index} />
             ))}
             <AddTodoIcon setVisible={setVisible} todoList={todo}/>
             {visible ? (<AddTodoModal taskList={taskList} setTaskList={setTaskList} />) : null }

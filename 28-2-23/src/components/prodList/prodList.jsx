@@ -4,7 +4,7 @@ import "./index.css"
 
 
 
-const ProdList = () => {
+const ProdList = ({setSingleProductModal}) => {
     const [dataList, setDataList] = useState([]);
     const [min, setMin] = useState(0);
     const [max, setMax] = useState(10);
@@ -25,7 +25,7 @@ const ProdList = () => {
             <div className="prodList">
                 {dataList.filter((oneProd) => oneProd.id > min && oneProd.id <= max)
                 .map((oneProd) => (
-                    <SingleProd prodData={oneProd} key={oneProd.id} />
+                    <SingleProd prodData={oneProd} key={oneProd.id} setSingleProductModal={setSingleProductModal} />
                 ))}
             </div>
             
