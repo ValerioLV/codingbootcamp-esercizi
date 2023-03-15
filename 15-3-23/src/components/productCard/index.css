@@ -1,0 +1,19 @@
+.ProductCard{
+    width: 320px;
+    border: 2px solid red ;
+}
+
+.ProductCard__title{
+    /* position: absolute; */
+}
+
+.ProductCard__img{
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.ProductCard_price{
+    text-align: right;
+    margin: 10px 5px;
+}

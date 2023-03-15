@@ -1,0 +1,21 @@
+.CardList{
+    position: relative;
+    top: 250px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
+.CardList__title{
+    margin: 10px 8px;
+}
+
+.CardList__products{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
