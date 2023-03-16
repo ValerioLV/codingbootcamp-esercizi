@@ -1,6 +1,6 @@
 import "./index.css"
 
-const Header = () => {
+const Header = ({cartList}) => {
     return (
         <nav className="Header">
             <ul className="Header__links">
@@ -12,6 +12,9 @@ const Header = () => {
             <input type="text" placeholder="Cerca un  tipo..." />
             <input type="button" value="Cerca" />
         </form>
+        <div className="Header__cart">
+            <p>{cartList.length ? JSON.parse(localStorage.getItem("cartItems")).length : 0}🛒</p>
+        </div>
         </nav>
     )
 };

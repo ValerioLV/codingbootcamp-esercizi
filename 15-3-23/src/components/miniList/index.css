@@ -1,10 +1,9 @@
 .MiniList{
-    position: absolute;
-    top: 150px;
-    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 30px;
+    position: relative;
+    top: 130px;
+    gap: 10px;
+    margin: 0 60px;
+    padding: 10px;
     overflow-x: scroll;
-    padding: 0 60px;
 }

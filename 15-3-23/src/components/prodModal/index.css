@@ -1,0 +1,53 @@
+.ProdModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.ProdModal__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    height: 60vh;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+}
+
+.ProdModal__images{
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ProdModal__images img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.ProdModal__close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    border: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.ProdModal__buy{
+    width: fit-content;
+    align-self: center;
+}

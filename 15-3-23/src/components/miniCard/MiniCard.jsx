@@ -6,7 +6,9 @@ const MiniCard = ({images, title}) => {
     }
 
     return(
-        <img onClick={onImgClick} className="Mini__photo" src={images[0]} alt={title} />
+        <div className="MiniCard">
+            <img onClick={onImgClick} className="Mini__photo" src={images[0]} alt={title} />
+        </div>
     )  
 }
 

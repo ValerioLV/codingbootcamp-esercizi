@@ -1,15 +1,23 @@
+import { useState } from 'react'
 import MiniList from './components/miniList'
 import Header from './components/header'
 import CardList from './components/cardList'
+import ProdModal from './components/prodModal'
 import './App.css'
 
+
 function App() {
+  const [modalData, setModalData] = useState({productData: {}, isVisible: false});
+  const [cartList, setCartList] = useState([]);
 
   return (
     <div className="App">
-      <Header />
+      <Header cartList={cartList} />
       <MiniList />
-      <CardList title={"Skincare"} endpoint={"/category/skincare"} />
+      <CardList title={"Skincare"} endpoint={"/category/skincare"} setModalData={setModalData} />
+      {modalData.isVisible && (
+        <ProdModal prodData={modalData.productData} setModalData={setModalData} setCartList={setCartList} cartList={cartList}/>
+      )}
     </div>
   )
 }

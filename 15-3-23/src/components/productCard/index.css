@@ -1,15 +1,10 @@
 .ProductCard{
-    width: 320px;
-    border: 2px solid red ;
-}
-
-.ProductCard__title{
-    /* position: absolute; */
+    width: 250px;
 }
 
 .ProductCard__img{
-    width: 320px;
-    height: 250px;
+    width: 250px;
+    height: 180px;
     object-fit: cover;
 }
 
