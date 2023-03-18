@@ -1,0 +1,8 @@
+.CartItem {
+	display: flex;
+	gap: 10px;
+}
+
+.CartItem p {
+	margin: 5px 0;
+}
