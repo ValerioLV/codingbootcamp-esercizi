@@ -3,7 +3,10 @@ import "./index.css";
 const CartItem = ({ product, setCartList }) => {
 	const ProDelete = () => {
 		setCartList((prev) =>
-			prev.filter((item) => item !== product),
+			prev.filter(
+				(item) =>
+					item.orderId !== product.orderId,
+			),
 		);
 	};
 

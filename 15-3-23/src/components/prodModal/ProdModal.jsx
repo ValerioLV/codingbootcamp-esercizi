@@ -20,6 +20,10 @@ const ProdModal = ({
 
 		// setCartList((prev) => [...prev, prodData])
 		// }
+		prodData = {
+			...prodData,
+			orderId: Math.floor(Math.random() * 1000),
+		};
 		const CartItems =
 			JSON.parse(
 				localStorage.getItem("cartItems"),
